@@ -21,25 +21,13 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -61,4 +49,41 @@ class DefaultFirebaseOptions {
     storageBucket: 'myportfolio-1ace9.firebasestorage.app',
     measurementId: 'G-2ZRBN96KZG',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBvff11wL7ta8NEiChW_LOFooyLgDYQFt0',
+    appId: '1:514802340661:ios:991774f1f08c0ce5f3b27c',
+    messagingSenderId: '514802340661',
+    projectId: 'myportfolio-1ace9',
+    storageBucket: 'myportfolio-1ace9.firebasestorage.app',
+    iosBundleId: 'com.example.myPortfolio',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyBvff11wL7ta8NEiChW_LOFooyLgDYQFt0',
+    appId: '1:514802340661:ios:991774f1f08c0ce5f3b27c',
+    messagingSenderId: '514802340661',
+    projectId: 'myportfolio-1ace9',
+    storageBucket: 'myportfolio-1ace9.firebasestorage.app',
+    iosBundleId: 'com.example.myPortfolio',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyC8OccZRWji2ahGISC7J4GbDNTz5SczUtg',
+    appId: '1:514802340661:android:e4b77db8b42eb6c0f3b27c',
+    messagingSenderId: '514802340661',
+    projectId: 'myportfolio-1ace9',
+    storageBucket: 'myportfolio-1ace9.firebasestorage.app',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyA3Omy2zyTHPMH5sh_erhCeDGBzjfZBtHg',
+    appId: '1:514802340661:web:aa49617836ab9f12f3b27c',
+    messagingSenderId: '514802340661',
+    projectId: 'myportfolio-1ace9',
+    authDomain: 'myportfolio-1ace9.firebaseapp.com',
+    storageBucket: 'myportfolio-1ace9.firebasestorage.app',
+    measurementId: 'G-RMBC3XSZ6V',
+  );
+
 }

@@ -94,14 +94,20 @@ class _ProjectCarouselState extends State<ProjectCarousel> {
             child: ListenableBuilder(
                 listenable: controller,
                 builder: (context, _) {
-                  final page = controller.page;
+                  int? page;
+                  if (mounted) {
+                    page = controller.page?.round();
+                  } else {
+                    page = 0;
+                  }
                   return Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       for (int i = 0; i < projects.length; i++)
                         i == page?.round()
                             ? Container(
-                                margin: const EdgeInsets.symmetric(horizontal: 8),
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 8),
                                 height: 24,
                                 width: 24,
                                 decoration: const BoxDecoration(
@@ -110,7 +116,8 @@ class _ProjectCarouselState extends State<ProjectCarousel> {
                                 ),
                               )
                             : Container(
-                                margin: const EdgeInsets.symmetric(horizontal: 8),
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 8),
                                 height: 24,
                                 width: 24,
                                 decoration: const BoxDecoration(

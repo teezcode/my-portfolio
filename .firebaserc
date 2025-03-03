@@ -1,7 +1,16 @@
 {
   "projects": {
-    "portfolio": "myportfolio-1ace9"
+    "portfolio": "myportfolio-1ace9",
+    "default": "myportfolio-1ace9"
   },
-  "targets": {},
+  "targets": {
+    "myportfolio-1ace9": {
+      "hosting": {
+        "portfolio": [
+          "hezcode"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
