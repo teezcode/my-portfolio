@@ -73,7 +73,7 @@ class DesktopProjects extends StatelessWidget {
                           childAspectRatio: 1.6, // Adjust the aspect ratio (width / height) to bring items closer
                         ),
                         itemBuilder: (BuildContext context, int index) {
-                          return Image.network(products[index],fit: BoxFit.cover,);
+                          return Image.asset(products[index],fit: BoxFit.cover,);
                         },
                       ),
                     ),
