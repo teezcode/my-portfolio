@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../constants/nav_item.dart';
+import '../constants/resume_url.dart';
 
 class MobileDrawer extends StatefulWidget {
   const MobileDrawer({super.key});
@@ -42,20 +44,23 @@ class _MobileDrawerState extends State<MobileDrawer> {
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50.0),
-              child: Container(
-                decoration: BoxDecoration(
-                    border: Border.all(color: const Color(0xff15C196),width: 2)
-                ),
-                width: double.infinity,
-                height: 47,
-                child: const Center(
-                  child: Text('Resume',
-                    //textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Color(0xff15C196),
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16
-                    ),),
+              child: GestureDetector(
+                onTap: () => launchUrl(Uri.parse(resumeUrl)),
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(color: const Color(0xff15C196),width: 2)
+                  ),
+                  width: double.infinity,
+                  height: 47,
+                  child: const Center(
+                    child: Text('Resume',
+                      //textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Color(0xff15C196),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                      ),),
+                  ),
                 ),
               ),
             )

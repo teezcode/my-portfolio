@@ -20,7 +20,6 @@ class MobileHeader extends StatelessWidget {
             //height: screenHeight,
             constraints: const BoxConstraints(minHeight: 560),
             child: Column(
-
               crossAxisAlignment: CrossAxisAlignment.start,
               children:  [
                 const Row(),

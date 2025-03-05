@@ -17,7 +17,7 @@ class MainTab extends StatelessWidget {
          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 20),
+              padding: const EdgeInsets.only(top: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:  [

@@ -21,7 +21,7 @@ class MainDesktop extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 67),
+              padding: const EdgeInsets.only(top: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:  [
