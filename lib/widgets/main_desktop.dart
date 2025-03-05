@@ -48,13 +48,6 @@ class MainDesktop extends StatelessWidget {
                       ]
                       )
                   ),
-                  //SizedBox(height: 10,),
-                  // const Text('Mobile Developer',style: TextStyle(
-                  //     fontSize: 80,
-                  //     fontWeight: FontWeight.w700,
-                  //     color: Colors.white
-                  // ),
-                  // ),
                   const SizedBox(height: 15),
                   const Text('A Flutter mobile developer with three years of experience, \nand I’m passionate about building sleek, user-friendly apps that make a real impact.\nWhether it’s designing smooth user interfaces or diving deep into code, \nI love the challenge of bringing ideas to life through mobile apps.',
                     //textAlign: TextAlign.center,

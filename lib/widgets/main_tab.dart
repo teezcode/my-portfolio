@@ -44,13 +44,6 @@ class MainTab extends StatelessWidget {
                       ]
                       )
                   ),
-                  //SizedBox(height: 10,),
-                  // const Text('Mobile Developer',style: TextStyle(
-                  //     fontSize: 36,
-                  //     fontWeight: FontWeight.w700,
-                  //     color: Colors.white
-                  // ),
-                  // ),
                   const SizedBox(height: 15),
                   const Text('A Flutter mobile developer \nwith three years of experience,\nand I’m passionate about building sleek, \nuser-friendly apps that make a real impact.\nWhether it’s designing smooth user \ninterfaces or diving deep into code, \nI love the challenge of bringing \nideas to life through mobile apps.',
                     //textAlign: TextAlign.center,
@@ -165,22 +158,6 @@ class MainTab extends StatelessWidget {
               padding: const EdgeInsets.only(top: 408.0,left: 0,right: 0),
               child: Image.asset('images/paschal_me.png',fit: BoxFit.contain,),
             ))
-            // Expanded(
-            //   child: Container(
-            //     margin: const EdgeInsets.only(top: 100),
-            //     decoration: const BoxDecoration(
-            //         //color: Colors.yellow,
-            //         image: DecorationImage(
-            //           image: AssetImage('images/new_me.png'),
-            //           fit: BoxFit.cover
-            //         )
-            //     ),
-            //     width: double.infinity,
-            //     height: 300,
-            //     //color: Colors.white,
-            //   ),
-            // )
-            //Expanded(child: Image.asset('images/new_me.png',width: screenWidth,fit: BoxFit.cover,))
           ],
         ),
       ),
