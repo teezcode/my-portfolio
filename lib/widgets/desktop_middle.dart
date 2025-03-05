@@ -74,19 +74,15 @@ class DesktopMiddle extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         HubbiesWidget(
-                          title:
-                              "Reasonable and flexible prices \nfor clients",
-                          icon: 'images/wallet.png',
-                          subTitle:
-                              "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Enim nunc consectetur \nmagnis orci at dis in leo consequat.",
+                          title: "Reasonable and flexible prices \nfor clients",
+                          icon: 'images/Wallet.png',
+                          subTitle: "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Enim nunc consectetur \nmagnis orci at dis in leo consequat.",
                         ),
                         SizedBox(height: 60),
                         HubbiesWidget(
-                          title:
-                              "Reasonable and flexible prices \nfor clients",
+                          title: "Reasonable and flexible prices \nfor clients",
                           icon: 'images/Headphone 2.png',
-                          subTitle:
-                              "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Enim nunc consectetur \nmagnis orci at dis in leo consequat.",
+                          subTitle: "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Enim nunc consectetur \nmagnis orci at dis in leo consequat.",
                         ),
                         SizedBox(height: 60),
                         HubbiesWidget(

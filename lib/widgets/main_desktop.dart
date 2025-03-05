@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_portfolio/widgets/desktop_constrained_box.dart';
 
+import 'animated_title.dart';
+
 class MainDesktop extends StatelessWidget {
   const MainDesktop({super.key});
 
@@ -48,33 +50,15 @@ class MainDesktop extends StatelessWidget {
                       ]
                       )
                   ),
+                  const SizedBox(height: 10,),
+                  const AnimatedTitle(),
                   const SizedBox(height: 15),
-                  const Text('A Flutter mobile developer with three years of experience, \nand I’m passionate about building sleek, user-friendly apps that make a real impact.\nWhether it’s designing smooth user interfaces or diving deep into code, \nI love the challenge of bringing ideas to life through mobile apps.',
-                    //textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white
-                    ),
-                  ),
-                  const SizedBox(height: 15),
-                  const Text('When I’m not in front of my screen coding, you’ll probably find me working out \njamming to some tunes, \nor exploring new music. I’m always curious and love making research on the \nlatest trends in tech, staying up-to-date with innovations, \nand discovering cool things that inspire me to build better.',
-                    //textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white
-                    ),
-                  ),
-                  const SizedBox(height: 15),
-                  const Text('If you’re into mobile development, tech, or just cool stuff in general, let’s connect!',
-                    //textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white
-                    ),
-                  ),
+                  const Text("Currently  located in South Eastern Nigeria, i love building \ninteractive"
+                      "digital experiences and systems on mobile.",style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white
+                  )),
                   const SizedBox(height: 60,),
                   Container(
                     decoration: BoxDecoration(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import 'animated_title.dart';
+
 class MobileHeader extends StatelessWidget {
   const MobileHeader({super.key});
 
@@ -47,40 +49,15 @@ class MobileHeader extends StatelessWidget {
                     ]
                     )
                 ),
-                //SizedBox(height: 10,),
-                // const Text('Mobile Developer',style: TextStyle(
-                //     fontSize: 30,
-                //     fontWeight: FontWeight.w700,
-                //     color: Colors.white
-                // ),
-                // ),
                 const SizedBox(height: 15),
-                const Text('A Flutter mobile developer \nwith three years of experience,\nand I’m passionate about building sleek, \nuser-friendly apps that make a real impact.\nWhether it’s designing smooth user \ninterfaces or diving deep into code, \nI love the challenge of bringing \nideas to life through mobile apps.',
-                  //textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white
-                  ),
-                ),
+                const AnimatedTitle(),
                 const SizedBox(height: 15),
-                const Text('When I’m not in front of my screen coding, \nyou’ll probably find me working out \njamming to some tunes, \nor exploring new music. \nI’m always curious and love \nmaking research on the \nlatest trends in tech, \nstaying up-to-date with innovations, \nand discovering cool things \nthat inspire me to build better.',
-                  //textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white
-                  ),
-                ),
-                const SizedBox(height: 15),
-                const Text('If you’re into mobile development,\ntech,or just cool stuff in general',
-                  //textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white
-                  ),
-                ),
+                const Text("Currently  located in South Eastern \nNigeria, i love building interactive"
+                    "digital \nexperiences and systems on mobile.",style: TextStyle(
+                    fontSize: 19,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white
+                )),
                 const SizedBox(height: 10,),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 28.0),

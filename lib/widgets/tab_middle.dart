@@ -79,7 +79,7 @@ class TabMiddle extends StatelessWidget {
                         HubbiesWidget(
                           title:
                           "Reasonable and flexible prices \nfor clients",
-                          icon: 'images/wallet.png',
+                          icon: 'images/Wallet.png',
                           subTitle:
                           "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Enim nunc consectetur \nmagnis orci at dis in leo consequat.",
                         ),
