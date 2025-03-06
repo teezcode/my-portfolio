@@ -8,7 +8,8 @@ import '../constants/resume_url.dart';
 
 
 class HeaderDesktop extends StatefulWidget {
-  const HeaderDesktop({super.key});
+  const HeaderDesktop({super.key, required this.onNavItemTap});
+  final Function(int) onNavItemTap;
 
   @override
   State<HeaderDesktop> createState() => _HeaderDesktopState();
@@ -31,7 +32,7 @@ class _HeaderDesktopState extends State<HeaderDesktop> {
             for(int i=0; i < navTitles.length; i++)
               Padding(
                 padding: const EdgeInsets.only(right: 69.0),
-                child: TextButton(onPressed: (){}, child: Text(navTitles[i],style: const TextStyle(fontSize: 16,color: Colors.white),)),
+                child: TextButton(onPressed: (){widget.onNavItemTap(i);}, child: Text(navTitles[i],style: const TextStyle(fontSize: 16,color: Colors.white),)),
               ),
             //const SizedBox(width: 69),
             GestureDetector(

@@ -9,7 +9,8 @@ import '../constants/resume_url.dart';
 
 
 class HeaderTab extends StatelessWidget {
-  const HeaderTab({super.key});
+  const HeaderTab({super.key, required this.onNavMenuTap});
+  final Function(int) onNavMenuTap;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class HeaderTab extends StatelessWidget {
             for(int i=0; i < navTitles.length; i++)
               Padding(
                 padding: const EdgeInsets.only(right: 20.0),
-                child: TextButton(onPressed: (){}, child: Text(navTitles[i],style: const TextStyle(fontSize: 16,color: Colors.white),)),
+                child: TextButton(onPressed: (){onNavMenuTap(i);}, child: Text(navTitles[i],style: const TextStyle(fontSize: 16,color: Colors.white),)),
               ),
             //const SizedBox(width: 69),
             GestureDetector(

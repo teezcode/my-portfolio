@@ -31,7 +31,9 @@ class _AllProjectPageDesktopState extends State<AllProjectPageDesktop> {
           backgroundColor: const Color(0xff090E18),
           endDrawer: constraints.maxWidth >= desktopScreenWidth
               ? null
-              : const MobileDrawer(),
+              : MobileDrawer(onNavMenuTap:(int navIndex){
+
+          }),
           body: Container(
             decoration: BoxDecoration(
                 color: const Color(0xff1A293F).withOpacity(0.2),
@@ -41,9 +43,13 @@ class _AllProjectPageDesktopState extends State<AllProjectPageDesktop> {
               //scrollDirection: Axis.vertical,
               children: [
                 constraints.maxWidth >= desktopScreenWidth
-                    ? const HeaderDesktop()
+                    ? HeaderDesktop(onNavItemTap:(int navIndex){
+
+                } )
                     : constraints.maxWidth >= tabScreenWidth
-                        ? const HeaderTab()
+                        ?  HeaderTab(onNavMenuTap:(int navIndex){
+                  //scrollToSection(navIndex);
+                })
                         : HeaderMobile(
                             onMenuTap: () {
                               scaffoldKey.currentState?.openEndDrawer();

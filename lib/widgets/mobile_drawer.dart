@@ -4,14 +4,10 @@ import 'package:url_launcher/url_launcher.dart';
 import '../constants/nav_item.dart';
 import '../constants/resume_url.dart';
 
-class MobileDrawer extends StatefulWidget {
-  const MobileDrawer({super.key});
+class MobileDrawer extends StatelessWidget {
+  const MobileDrawer({super.key, required this.onNavMenuTap});
+  final Function(int) onNavMenuTap;
 
-  @override
-  State<MobileDrawer> createState() => _MobileDrawerState();
-}
-
-class _MobileDrawerState extends State<MobileDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -37,7 +33,9 @@ class _MobileDrawerState extends State<MobileDrawer> {
             for(int i = 0; i < navIcon.length; i++)
               ListTile(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 30,vertical: 10),
-                onTap: (){},
+                onTap: (){
+                  onNavMenuTap(i);
+                },
                 leading: Icon(navIcon[i],color: Colors.white,),
                 title: Text(navTitles[i],style: const TextStyle(color: Colors.white),),
               ),
